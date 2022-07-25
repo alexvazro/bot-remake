@@ -8,6 +8,10 @@ def index():
     return "Hello World!"
 
 
+@app.route("/run")
+def test_run():
+    keep_alive()
+
 def run():
 
   app.run(host='0.0.0.0',port=8080)
