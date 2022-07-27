@@ -1,5 +1,6 @@
 from flask import Flask
 from threading import Thread
+import d_bot
 
 app = Flask(__name__)
 
@@ -8,11 +9,11 @@ def index():
     return "Hello World!"
 
 
-@app.route("/run")
-def test_run():
+@app.route("/reset")
+#TODO: this function resets the bot: TO DO
+def test():
+    import d_bot
     keep_alive()
-    return "hello"
-
 
 def run():
 
@@ -25,6 +26,7 @@ def keep_alive():
     t = Thread(target=run)
 
     t.start()
+    print("keepalive end")
 
 if __name__ == "__main__":
     app.run()
