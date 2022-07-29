@@ -1,11 +1,11 @@
 from flask import Flask
 from threading import Thread
+import d_bot
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    import d_bot
     return "Hello World!"
 
 
