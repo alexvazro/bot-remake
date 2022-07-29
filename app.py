@@ -31,9 +31,7 @@ def keep_alive():
     t = Thread(target=run)
 
     t.start()
-    print("keepalive end")
 
 if __name__ == "__main__":
     app.run()
     
-keep_alive()
