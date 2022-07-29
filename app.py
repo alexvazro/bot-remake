@@ -9,12 +9,6 @@ def index():
     return "Hello World!"
 
 
-@app.route("/reset")
-#TODO: this function resets the bot: TO DO
-def test():
-    import d_bot
-    keep_alive()
-
 def run():
 
   app.run(port=8080)
@@ -28,8 +22,7 @@ def keep_alive():
     t.start()
     print("keepalive end")
 
-if __name__ == "__app__":
-    app.run()
 
+
+app.run()
 keep_alive()
-
