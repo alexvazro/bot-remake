@@ -10,8 +10,7 @@ def index():
 
 
 def run():
-
-  app.run(port=8080)
+    app.run()
 
 
 
