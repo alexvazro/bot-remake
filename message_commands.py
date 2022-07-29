@@ -53,7 +53,7 @@ def main_on_message(client):
     #Shows random monkey gif from lists.py
     if msg == "!monke":
       link = lists.get_monke()
-      await message.channel.send("monke")
+      await message.channel.send(link)
       return
 
     #Bot agrees with you
