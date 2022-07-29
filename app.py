@@ -28,7 +28,7 @@ def keep_alive():
     t.start()
     print("keepalive end")
 
-if __name__ == "__main__":
+if __name__ == "__app__":
     app.run()
 
 keep_alive()
