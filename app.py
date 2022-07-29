@@ -14,7 +14,6 @@ def index():
 @app.route("/reset")
 #TODO: this function resets the bot: TO DO
 def test():
-    import d_bot
     keep_alive()
 
 @app.route("/kill")
