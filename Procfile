@@ -1,1 +1,1 @@
-gunicorn --bind=0.0.0.0 --timeout 600 d_bot:app
+web: gunicorn app:app
