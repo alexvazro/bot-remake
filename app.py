@@ -20,7 +20,7 @@ def test():
 
 @app.route("/kill")
 def test():
-    quit
+    quit()
 
 def run():
 
