@@ -2,11 +2,13 @@ from flask import Flask
 from threading import Thread
 import d_bot
 
+
+
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    
+
     return "Hello World!"
 
 
@@ -15,6 +17,10 @@ def index():
 def test():
     import d_bot
     keep_alive()
+
+@app.route("/kill")
+def test():
+    quit
 
 def run():
 
@@ -31,4 +37,5 @@ def keep_alive():
 
 if __name__ == "__main__":
     app.run()
-
+    
+keep_alive()
