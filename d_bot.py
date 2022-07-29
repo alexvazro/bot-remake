@@ -4,6 +4,7 @@ import os
 from message_commands import main_on_message
 import functions_db
 from dotenv import load_dotenv
+from app import keep_alive
 load_dotenv()
 
 #IF IP TIME OUT/TEMP BAN -- TYPE "kill 1" IN THE SHELL
@@ -34,3 +35,4 @@ main_on_message(client)
 #uptime robot to keep bot alive
 DISCORD_TOKEN = os.environ.get('DISCORD_TOKEN', None)
 client.run(DISCORD_TOKEN)
+keep_alive()
