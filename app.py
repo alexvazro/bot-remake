@@ -19,7 +19,7 @@ def test():
     keep_alive()
 
 @app.route("/kill")
-def test():
+def kill():
     quit()
 
 def run():
