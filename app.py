@@ -2,7 +2,6 @@ from flask import Flask
 from threading import Thread
 import d_bot
 
-#test
 
 app = Flask(__name__)
 
