@@ -10,6 +10,7 @@ def index():
     return "Hello World!"
 
 
+@app.route("/run")
 def run():
     app.run()
 
