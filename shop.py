@@ -17,6 +17,7 @@ def main_shop(name, item, client):
     return(string)
 
 def get_price():
+  #a
   
   shop = lists.get_shop()
   prices = []
